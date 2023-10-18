@@ -1,5 +1,7 @@
+import { Theme } from '@radix-ui/themes'
 import type { Metadata } from 'next'
 import { Noto_Sans_JP } from 'next/font/google'
+import { NextThemeProvider } from './next-theme-provider'
 import './globals.css'
 import '@radix-ui/themes/styles.css'
 
@@ -13,12 +15,17 @@ const NotoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
 })
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='jp'>
-      <head />
-      {/* <body>{children}</body> */}
-      <body className={NotoSansJP.className}>{children}</body>
+    <html lang='jp' suppressHydrationWarning>
+      <head>
+        <meta name='viewport' content='width=device-width,initial-scale=1' />
+      </head>
+      <body className={NotoSansJP.className}>
+        <NextThemeProvider>
+          <Theme accentColor='lime'>{children}</Theme>
+        </NextThemeProvider>
+      </body>
     </html>
   )
 }
