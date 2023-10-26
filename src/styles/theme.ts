@@ -21,5 +21,9 @@ export const theme = extendTheme({
         700: '#A9804B',
       },
     },
+    background: {
+      primary: '#CBD5E1',
+      secondary: '#F8FAFC',
+    },
   },
 });
