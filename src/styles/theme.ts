@@ -22,8 +22,29 @@ export const theme = extendTheme({
       },
     },
     background: {
-      primary: '#CBD5E1',
-      secondary: '#F8FAFC',
+      primary: {
+        500: '#CBD5E1',
+        700: '#94A3B8',
+      },
+      secondary: {
+        500: '#F8FAFC',
+        700: '#EFF0F0',
+      },
+    },
+    text: {
+      primary: '#0F172A',
+      secondary: {
+        500: '#6B7280',
+        700: '#4B5563',
+      },
+      light: '##F8FAFC',
+    },
+    accent: {
+      note: {
+        500: '#EF4444',
+        700: '#DC2626',
+      },
+      success: '#80D05A',
     },
   },
 });
