@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import { ChakraProviders } from './chakra-provider';
+import '@/styles/global.css';
 
 export const metadata: Metadata = {
   title: 'Next13 Sample',
-  description: '',
+  description: '', // TODO: いい感じのDescriptionを考えておく
 };
 
 const NotoSansJP = Noto_Sans_JP({

@@ -1,5 +1,10 @@
-import { AppendButton } from '@/components/append-button';
+import { Flex } from '@chakra-ui/react';
+import { TimeLine } from '@/features/timeline';
 
 export default function AppPage() {
-  return <AppendButton />;
+  return (
+    <Flex justify="center">
+      <TimeLine />
+    </Flex>
+  );
 }
