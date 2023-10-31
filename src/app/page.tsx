@@ -1,10 +1,5 @@
-import { Flex } from '@chakra-ui/react';
-import { TimeLine } from '@/features/timeline';
+import { TimeLine } from '@/features/TimeLine';
 
 export default function AppPage() {
-  return (
-    <Flex justify="center">
-      <TimeLine />
-    </Flex>
-  );
+  return <TimeLine />;
 }

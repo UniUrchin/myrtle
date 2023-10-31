@@ -3,11 +3,11 @@ import { Image } from '@chakra-ui/react';
 export const CoverImage = () => {
   return (
     <Image
-      height="160px"
       width="inherit"
+      height="160px"
       objectFit="cover"
-      src="cover-example.png"
       alt="カバー画像"
+      src="cover-example.png"
     />
   );
 };

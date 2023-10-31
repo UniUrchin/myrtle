@@ -5,8 +5,8 @@ export const SettingIcon = () => {
     <Icon
       width="24px"
       height="24px"
-      viewBox="0 0 24 24"
       color="text.secondary.500"
+      viewBox="0 0 24 24"
     >
       <path
         fill="currentColor"

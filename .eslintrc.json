@@ -5,7 +5,14 @@
     "plugin:import/warnings",
     "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["chakra-ui"],
+  "parserOptions": {
+    "project": true,
+    "tsconfigRootDir": "./"
+  },
   "rules": {
+    "chakra-ui/props-order": "error",
     "import/order": [
       "error",
       {

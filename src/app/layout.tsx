@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
-import { ChakraProviders } from './chakra-provider';
-import '@/styles/global.css';
+import { Container } from './container';
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Next13 Sample',
@@ -20,7 +20,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </head>
       <body className={NotoSansJP.className}>
-        <ChakraProviders>{children}</ChakraProviders>
+        <Providers>
+          <Container>{children}</Container>
+        </Providers>
       </body>
     </html>
   );
