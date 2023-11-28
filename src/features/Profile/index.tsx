@@ -17,12 +17,7 @@ export const Profile = () => {
         padding="16px"
         background="background.secondary.500"
       >
-        <ProfileAvator
-          avatarName="嘆きのぺんぎん"
-          position="absolute"
-          top="-60px"
-          left="16px"
-        />
+        <ProfileAvator position="absolute" top="-60px" left="16px" />
         <Box marginLeft="auto">
           <SettingIcon />
         </Box>

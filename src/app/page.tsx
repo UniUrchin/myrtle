@@ -5,7 +5,7 @@ export default function AppPage() {
   return (
     <Flex
       flexDirection="column"
-      maxWidth="390"
+      width="390px"
       background="background.secondary.700"
     >
       <Profile />
