@@ -1,6 +1,6 @@
 import { Image } from '@chakra-ui/react';
 
-export const CoverImage = () => {
+export const ProfileCoverImage = () => {
   return (
     <Image
       width="inherit"

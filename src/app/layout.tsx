@@ -3,8 +3,9 @@ import { Container } from './container';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  title: 'Next13 Sample',
-  description: '', // TODO: いい感じのDescriptionを考えておく
+  title: 'Myrtle',
+  description:
+    'Myrtle - SNS(Solo Nageki Service) where you can lament with peace of mind',
 };
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {

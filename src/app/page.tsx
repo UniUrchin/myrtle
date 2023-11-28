@@ -1,5 +1,14 @@
-import { TimeLine } from '@/features/TimeLine';
+import { Flex } from '@chakra-ui/react';
+import { Profile } from '@/features/Profile';
 
 export default function AppPage() {
-  return <TimeLine />;
+  return (
+    <Flex
+      flexDirection="column"
+      maxWidth="390"
+      background="background.secondary.700"
+    >
+      <Profile />
+    </Flex>
+  );
 }
